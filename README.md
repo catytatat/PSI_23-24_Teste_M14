@@ -13,9 +13,10 @@ No teu repositório, acede a "Settings -> Collaborators" e adiciona o utilizador
 
 Quando acabares, carrega no botão "Commit Changes".
 
-## Informação do aluno
+## Informação do aluno 
 
-    Nome: ...
+
+    Nome: Catarina Feliciano Cachoeira
 
 ## Considera a seguinte enumeração: (6v)
 
@@ -27,12 +28,27 @@ Realiza as seguintes instruções:
 
 1. Declara uma lista de `Monstro` e adiciona-lhe 3 elementos distintos da enumeração. (6v)
 
-        Resposta: ...
+        Resposta: List<Monstro> monstros = new List<Monstro> ();
+       monstros.Add(monstro.Vampiro);
+       monstros.Add(monstro.Ogro);
+       mostros.Add(monstro.Lobisomem);
+
+
     
-2. Considera a variável `m`do tipo `Monstro`. Escreve uma linha de código onde atribuis a esta variável o valor do primeiro elemento da lista da instrução anterior. (4v)
+3. Considera a variável `m`do tipo `Monstro`. Escreve uma linha de código onde atribuis a esta variável o valor do primeiro elemento da lista da instrução anterior. (4v)
 
-        Resposta: ...
+        Resposta: Monstro m = monstros[0];
    
-3. Escreve o código de um método que recebe a lista da primeira instrução, e devolve um inteiro indicando quantos elementos existem na lista. O método deve fazer uso de LINQ. (10v)
+4. Escreve o código de um método que recebe a lista da primeira instrução, e devolve um inteiro indicando quantos elementos existem na lista. O método deve fazer uso de LINQ. (10v)
 
-        Resposta: ...
+        Resposta:
+
+using System.Linq;
+
+public int ContarElementos(List<Monstro> monstros){
+
+return monstros.Count();
+
+}
+
+
